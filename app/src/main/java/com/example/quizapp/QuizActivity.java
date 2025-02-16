@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-
 public class QuizActivity extends AppCompatActivity {
 
     private TextView questionText;
@@ -22,17 +20,29 @@ public class QuizActivity extends AppCompatActivity {
             "What is Java?",
             "Who developed Android?",
             "What does API stand for?",
-            "Which one is a database?"
+            "Which one is a database?",
+            "What is the capital of France?",
+            "Which planet is known as the Red Planet?",
+            "Who wrote 'To Kill a Mockingbird'?",
+            "What is the chemical symbol for water?",
+            "Which language is used for Android app development?",
+            "What is the largest mammal in the world?"
     };
 
     private String[][] options = {
             {"Programming Language", "Fruit", "Animal", "City"},
             {"Google", "Apple", "Microsoft", "IBM"},
             {"Application Programming Interface", "Apple Phone Interface", "Automated Process Integration", "Android Programming Interface"},
-            {"MySQL", "Java", "Python", "CSS"}
+            {"MySQL", "Java", "Python", "CSS"},
+            {"Paris", "London", "Berlin", "Madrid"},
+            {"Mars", "Venus", "Jupiter", "Saturn"},
+            {"Harper Lee", "Mark Twain", "J.K. Rowling", "George Orwell"},
+            {"H2O", "CO2", "NaCl", "O2"},
+            {"Java", "Python", "C++", "Swift"},
+            {"Blue Whale", "Elephant", "Giraffe", "Shark"}
     };
 
-    private int[] correctAnswers = {0, 0, 0, 0}; // Index of correct answers
+    private int[] correctAnswers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Index of correct answers
 
     private int currentIndex = 0;
     private int score = 0;
